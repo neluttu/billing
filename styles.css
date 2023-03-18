@@ -14,7 +14,7 @@ body, html {
 body {
     display: flex;
     align-items:center;
-    
+
 }
 
 *:focus {
@@ -120,7 +120,6 @@ h2 span {
     color: #17182d;
     font-weight: 600;
     border-left: 6px solid #e43c38;
-    margin-left: -25px;
 }
 
 .left a:hover svg {
@@ -319,9 +318,41 @@ h2 span {
         margin: auto;
     }
 
-    .left a {
+    .left a, .left a:visited {
         margin-left: 0px;
+        display: inline-block;
+        border: 0px;
     }
+
+
+    .left a:hover {
+        border: 0px;
+        text-decoration: underline;
+    }
+
+    .left a.active {
+        color: #17182d;
+        font-weight: 600;
+        border-left: 0px solid #e43c38;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.show {
+        display: block;
+        animation: slide-down 0.5s ease forwards;
+      }
+      
+      @keyframes slide-down {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
 
     .content div.right {
         display: block;
@@ -334,9 +365,6 @@ h2 span {
         display: none;
     }
 
-    .menu {
-        display: none;
-    }
 
     #mobileMenu {
         position:absolute; 

@@ -60,14 +60,22 @@
                             <path d="M16 16l-2.51 -4.518m-1.487 -2.677l-1.003 -1.805" />
                           </svg>Apps</a>
                           <br><br><br>
-                          <a href="#" style="position: absolute; bottom: 30px;"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f5c81" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <a href="#" style="position: absolute; bottom: 20px;"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5f5c81" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
                             <path d="M7 12h14l-3 -3m0 6l3 -3" />
                           </svg>Logout</a>
                     </div>
                 </div>
-                <div class="right">
+                <script>
+                    const mobileMenu = document.getElementById("mobileMenu");
+                    const menu = document.querySelector(".menu");
+
+                    mobileMenu.addEventListener("click", function() {
+                    menu.classList.toggle("show");
+                    });
+                </script>
+            <div class="right">
                     <h1>Billing</h1>
                     <br>
                     <div class="billing">
